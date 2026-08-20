@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { EmployeeListComponent } from './employee-list/employee-list';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [EmployeeListComponent],
+  standalone: true,
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('employee-directory');
+  title = 'employee-directory';
 }
