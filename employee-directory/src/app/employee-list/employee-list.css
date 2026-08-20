@@ -1,0 +1,26 @@
+.employee-container {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.employee-container h2 {
+  margin-bottom: 20px;
+}
+
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.employee-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee-card h3 {
+  margin-top: 0;
+}
